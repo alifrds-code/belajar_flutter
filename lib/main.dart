@@ -2,7 +2,11 @@
 // import 'package:belajar_flutter/day_7/day_7.dart';
 // import 'package:belajar_flutter/day_7/day_7.dart';
 // import 'package:belajar_flutter/tugas_1/tugas1.dart';
-import 'package:belajar_flutter/tugas_2/tugas2.dart';
+// import 'package:belajar_flutter/day_7/day_7.dart';
+// import 'package:belajar_flutter/day_8/day8.dart';
+import 'package:belajar_flutter/tugas_3/tugas3.dart';
+import 'package:belajar_flutter/tugas_4/tugas4.dart';
+// import 'package:belajar_flutter/tugas_2/tugas2.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -21,7 +25,8 @@ class MyApp extends StatelessWidget {
         // This is the theme of your application.
         //
         // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a purple toolbar. Then, without quitting the app,
+        // the application has a purple toolbar. Then, w
+        //ithout quitting the app,
         // try changing the seedColor in the colorScheme below to Colors.green
         // and then invoke "hot reload" (save your changes or press the "hot
         // reload" button in a Flutter-supported IDE, or press "r" if you used
@@ -35,7 +40,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Tugas2Flutter(),
+      home: Tugas4(),
     );
   }
 }
