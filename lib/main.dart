@@ -4,8 +4,10 @@
 // import 'package:belajar_flutter/tugas_1/tugas1.dart';
 // import 'package:belajar_flutter/day_7/day_7.dart';
 // import 'package:belajar_flutter/day_8/day8.dart';
-import 'package:belajar_flutter/tugas_3/tugas3.dart';
-import 'package:belajar_flutter/tugas_4/tugas4.dart';
+// import 'package:belajar_flutter/belajar/belajar.dart';
+import 'package:belajar_flutter/tugas5/tugas5.dart';
+// import 'package:belajar_flutter/tugas_3/tugas3.dart';
+// import 'package:belajar_flutter/tugas_4/tugas4.dart';
 // import 'package:belajar_flutter/tugas_2/tugas2.dart';
 import 'package:flutter/material.dart';
 
@@ -40,7 +42,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Tugas4(),
+      home: Tugas5(),
     );
   }
 }
