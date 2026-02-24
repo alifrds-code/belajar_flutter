@@ -12,6 +12,7 @@
 import 'package:belajar_flutter/tugas6/login_page.dart';
 import 'package:belajar_flutter/tugas6/dashboard_page.dart';
 import 'package:belajar_flutter/tugas7/tugas7.dart';
+import 'package:belajar_flutter/tugas8/tugas8.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -53,7 +54,7 @@ class MyApp extends StatelessWidget {
       //   '/': (context) => LoginPage(),
       //   '/dashboard': (context) => DashboardPage(),
       // },
-      home: Tugas7(),
+      home: Tugas8(),
     );
   }
 }
