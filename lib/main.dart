@@ -11,6 +11,7 @@
 // import 'package:belajar_flutter/tugas_2/tugas2.dart';
 import 'package:belajar_flutter/tugas6/login_page.dart';
 import 'package:belajar_flutter/tugas6/dashboard_page.dart';
+import 'package:belajar_flutter/tugas7/tugas7.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -44,13 +45,15 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      initialRoute: '/', // halaman awal
 
-      routes: {
-        '/': (context) => LoginPage(),
-        '/dashboard': (context) => DashboardPage(),
-      },
-      // home: Tugas5(),
+      // pake route
+      // initialRoute: '/', // halaman awal
+
+      // routes: {
+      //   '/': (context) => LoginPage(),
+      //   '/dashboard': (context) => DashboardPage(),
+      // },
+      home: Tugas7(),
     );
   }
 }
