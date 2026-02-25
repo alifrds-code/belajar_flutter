@@ -9,10 +9,11 @@
 // import 'package:belajar_flutter/tugas_3/tugas3.dart';
 // import 'package:belajar_flutter/tugas_4/tugas4.dart';
 // import 'package:belajar_flutter/tugas_2/tugas2.dart';
-import 'package:belajar_flutter/tugas6/login_page.dart';
-import 'package:belajar_flutter/tugas6/dashboard_page.dart';
-import 'package:belajar_flutter/tugas7/tugas7.dart';
+// import 'package:belajar_flutter/tugas6/login_page.dart';
+// import 'package:belajar_flutter/tugas6/dashboard_page.dart';
+// import 'package:belajar_flutter/tugas7/tugas7.dart';
 import 'package:belajar_flutter/tugas8/tugas8.dart';
+import 'package:belajar_flutter/tugas9/tugas9.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -54,7 +55,7 @@ class MyApp extends StatelessWidget {
       //   '/': (context) => LoginPage(),
       //   '/dashboard': (context) => DashboardPage(),
       // },
-      home: Tugas8(),
+      home: Tugas9(),
     );
   }
 }

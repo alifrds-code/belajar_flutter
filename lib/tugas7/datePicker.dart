@@ -9,7 +9,6 @@ class DatePickerPage extends StatefulWidget {
 }
 
 class _DatePickerPageState extends State<DatePickerPage> {
-
   DateTime? selectedDate;
   @override
   Widget build(BuildContext context) {
@@ -38,8 +37,8 @@ class _DatePickerPageState extends State<DatePickerPage> {
           Text(
             selectedDate == null
                 ? ""
-                : "Tanggal Pilihan: ${DateFormat('dd MMMM yyyy').format(selectedDate!)}"
-                // : "${selectedDate!.day}-${selectedDate!.month}-${selectedDate!.year}",
+                : "Tanggal Pilihan: ${DateFormat('dd MMMM yyyy').format(selectedDate!)}",
+            // : "${selectedDate!.day}-${selectedDate!.month}-${selectedDate!.year}",
           ),
         ],
       ),
