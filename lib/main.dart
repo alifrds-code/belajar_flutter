@@ -12,9 +12,12 @@
 // import 'package:belajar_flutter/tugas6/login_page.dart';
 // import 'package:belajar_flutter/tugas6/dashboard_page.dart';
 // import 'package:belajar_flutter/tugas7/tugas7.dart';
+// import 'package:belajar_flutter/tugas10/tugas10.dart';
+// import 'package:belajar_flutter/tugas8/tugas8.dart';
+// import 'package:belajar_flutter/tugas9/tugas9.dart';
 import 'package:belajar_flutter/tugas10/tugas10.dart';
-import 'package:belajar_flutter/tugas8/tugas8.dart';
-import 'package:belajar_flutter/tugas9/tugas9.dart';
+import 'package:belajar_flutter/tugas11/database/preference.dart';
+import 'package:belajar_flutter/tugas11/view/tugas11_splashScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

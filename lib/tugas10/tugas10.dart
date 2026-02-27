@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:belajar_flutter/tugas10/homePage.dart';
+import 'package:belajar_flutter/tugas10/loginPage.dart';
+// import 'package:belajar_flutter/tugas11/database/preference.dart';
+// import 'package:belajar_flutter/tugas11/view/tugas11_splashScreen.dart';
 
 class Tugas10 extends StatefulWidget {
   Tugas10({super.key});
@@ -13,6 +15,7 @@ class _Tugas10State extends State<Tugas10> {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController noHPController = TextEditingController();
   final TextEditingController kelasController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
   bool isVisibility = false;
 
@@ -140,6 +143,49 @@ class _Tugas10State extends State<Tugas10> {
 
                           SizedBox(height: 15),
 
+                          // PASSWORD
+                          TextFormField(
+                            controller: passwordController,
+                            obscureText: !isVisibility,
+                            decoration: InputDecoration(
+                              prefixIcon: Icon(
+                                Icons.lock_outline,
+                                color: Color(0xFF145A32),
+                              ),
+                              labelText: "Password",
+                              filled: true,
+                              fillColor: Color(0xFFE8F5E9),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(15),
+                                borderSide: BorderSide.none,
+                              ),
+                              suffixIcon: IconButton(
+                                icon: Icon(
+                                  isVisibility
+                                      ? Icons.visibility
+                                      : Icons.visibility_off,
+                                  color: Color(0xFF145A32),
+                                ),
+                                onPressed: () {
+                                  setState(() {
+                                    isVisibility = !isVisibility;
+                                  });
+                                },
+                              ),
+                            ),
+                            validator: (value) {
+                              if (value == null || value.isEmpty) {
+                                return 'Password wajib diisi!';
+                              }
+                              if (value.length < 6) {
+                                return 'Password minimal 6 karakter!';
+                              }
+                              return null;
+                            },
+                          ),
+
+                          SizedBox(height: 15),
+
                           // KELAS
                           TextFormField(
                             controller: kelasController,
@@ -212,12 +258,15 @@ class _Tugas10State extends State<Tugas10> {
                                           onPressed: () {
                                             Navigator.pop(context);
 
-                                            Navigator.push(
+                                            Navigator.pushReplacement(
                                               context,
                                               MaterialPageRoute(
-                                                builder: (context) => HomePage(
+                                                builder: (context) => LoginPage(
                                                   nama: namaController.text,
                                                   kelas: kelasController.text,
+                                                  email: emailController.text,
+                                                  password:
+                                                      passwordController.text,
                                                 ),
                                               ),
                                             );

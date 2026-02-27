@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+// import 'package:belajar_flutter/tugas11/database/preference.dart';
+// import 'package:belajar_flutter/tugas11/view/tugas11_splashScreen.dart';
+import 'package:belajar_flutter/tugas10/tugas10.dart';
+
 
 class HomePage extends StatelessWidget {
   final String nama;
