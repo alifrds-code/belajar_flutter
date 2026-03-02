@@ -1,32 +1,25 @@
-import 'package:belajar_flutter/tugas11/models/user_model.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
+import '../models/user_model.dart';
 
 class DBHelper {
   static Future<Database> db() async {
     final dbPath = await getDatabasesPath();
     return openDatabase(
-      join(dbPath, 'al_falah.db'),
+      join(dbPath, 'tugas11_app.db'),
       onCreate: (db, version) async {
         await db.execute(
-          'CREATE TABLE user (id INTERGER PRIMARY KEY AUTOINCREMENT, email TEXT, password TEXT)',
+          'CREATE TABLE user (id INTEGER PRIMARY KEY AUTOINCREMENT, email TEXT, password TEXT)',
         );
         await db.execute(
-          'CREATE TABLE siswa (id INTERGER PRIMARY KEY AUTOINCREMENT, nama TEXT, kelas TEXT)',
+          'CREATE TABLE jamaah (id INTEGER PRIMARY KEY AUTOINCREMENT, nama TEXT, email TEXT, noHp TEXT, alamat TEXT)',
         );
       },
-      version: 2,
-      onUpgrade: (db, oldVersion, newVersion) async {
-        if (oldVersion < 2) {
-          await db.execute(
-            'CREATE TABLE siswa (id INTERGER PRIMARY KEY AUTOINCREMENT, nama TEXT, kelas TEXT)',
-          );
-        }
-      },
+      version: 1,
     );
   }
 
-  static Future<void> registeruser(UserModel user) async {
+  static Future<void> registerUser(UserModel user) async {
     final dbs = await db();
     await dbs.insert('user', user.toMap());
   }
