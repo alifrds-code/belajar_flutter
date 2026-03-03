@@ -1,8 +1,8 @@
-import 'package:belajar_flutter/tugas11p2/views/dataJamaah.dart';
+import 'package:belajar_flutter/tugas12/views/dataJamaah.dart';
 import 'package:flutter/material.dart';
 // import '../database/sqflite.dart';
-import 'package:belajar_flutter/tugas11p2/models/jamaah_model.dart';
-import 'package:belajar_flutter/tugas11p2/database/controller.dart';
+import 'package:belajar_flutter/tugas12/models/jamaah_model.dart';
+import 'package:belajar_flutter/tugas12/database/controller.dart';
 
 class InputJamaahView extends StatefulWidget {
   @override

@@ -1,4 +1,4 @@
-import '../models/jamaah_model.dart';
+import 'package:belajar_flutter/tugas12/models/jamaah_model.dart';
 import 'sqflite.dart';
 
 class JamaahController {
