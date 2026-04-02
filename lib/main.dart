@@ -20,6 +20,7 @@ import 'package:belajar_flutter/tugas11/database/preference.dart';
 import 'package:belajar_flutter/tugas11/view/tugas11_splashScreen.dart';
 import 'package:belajar_flutter/tugas12/views/screenSplash.dart';
 import 'package:belajar_flutter/tugas_14/views/pokemon_screen.dart';
+import 'package:belajar_flutter/tugas_15/views/login_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -61,7 +62,7 @@ class MyApp extends StatelessWidget {
       //   '/': (context) => LoginPage(),
       //   '/dashboard': (context) => DashboardPage(),
       // },
-      home: PokemonScreen(),
+      home: LoginScreen(),
     );
   }
 }
